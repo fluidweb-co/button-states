@@ -52,15 +52,15 @@ ButtonStates.init( options );
 
 Keep in mind Button States will only set the states of the button and your theme or page should provide the css code necessary to style the button for each of its state and add animations is necessary.
 
-### 1. Auto set button to `loading` state when clicked
+### 1. Auto set button to `loading` state when clicked
 
-Usefull when you know the action of a button will likelly take a few seconds do process, to make it auto-set the `loading` state all you need to do is add an attribute to the button `data-auto-loading-state`, this will also disable to button click while on `loading` state:
+Usefull when you know the action of a button will likelly take a few seconds do process, to make it auto-set the `loading` state all you need to do is add an attribute to the button `data-auto-loading-state`, this will also disable to button click while on `loading` state:
 
 ```html
 <button type="submit" data-auto-loading-state>Submit</button>
 ```
 
-To use this method you first need to initialize the script as explained above in the section ["Initialization"](#initialization)above.
+To use this method you first need to initialize the script as explained above in the section ["Initialization"](@initialization) above.
 
 ### 2. Set button state programatically
 
@@ -71,7 +71,7 @@ You can set any of these states to a button by passing it as a parameter to the 
 - LOADING
 - LOADED
 
-In the example below we make every button on the page change it's state to `loading`when clicked, this can be achieve individually be using the auto-set method as described above. This is a simple example to show how to use the function `ButtonStates.setState( button, state )` where `button` is an html element and `state` is one of the states defined at `ButtonStates.states`.
+In the example below we make every button on the page change it's state to `loading` when clicked, this can be achieve individually be using the auto-set method as described above. This is a simple example to show how to use the function `ButtonStates.setState( button, state )` where `button` is an html element and `state` is one of the states defined at `ButtonStates.states`.
 
 ```js
 // Set `loading` state to any button on the page when clicked
