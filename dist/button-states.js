@@ -1,6 +1,6 @@
 /*!
- * Help set button states for `loading`, `loaded` or `disabled`
- * or auto-set loading states when its action is expected to take some time.
+ * Helper to set button states for `loading`, `loaded` or `disabled`
+ * and auto-set loading states when its action is expected to take some time.
  */
 (function (root, factory) {
 	if ( typeof define === 'function' && define.amd ) {
